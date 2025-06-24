@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.12.6 on win32)" generated="2025-06-24T12:55:08.666862" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Tests" source="C:\Users\iwata\Desktop\Faculdade\EcoMarket\eco-market\robot-tests">
+<suite id="s1-s1" name="Tests" source="C:\Users\iwata\Desktop\Faculdade\EcoMarket\eco-market\robot-tests\tests">
+<suite id="s1-s1-s1" name="Login" source="C:\Users\iwata\Desktop\Faculdade\EcoMarket\eco-market\robot-tests\tests\login.robot">
+<test id="s1-s1-s1-t1" name="Login de Usuário EcoMarket" line="5">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:08.920773" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:55:08.920773" elapsed="5.331904"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:08.920773" elapsed="5.332904"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:14.253677" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:14.253677" elapsed="0.160079"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:14.253677" elapsed="0.160079"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:14.414757" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:55:14.431773" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:14.414757" elapsed="0.093670"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:14.414757" elapsed="0.093670"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:14.509427" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:14.509427" elapsed="0.248607"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:14.509427" elapsed="0.248607"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:55:14.758034" elapsed="2.707646"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:14.758034" elapsed="2.707646"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:08.919269" elapsed="8.547409"/>
+</test>
+<status status="PASS" start="2025-06-24T12:55:08.694168" elapsed="8.772510"/>
+</suite>
+<suite id="s1-s1-s2" name="Produtos" source="C:\Users\iwata\Desktop\Faculdade\EcoMarket\eco-market\robot-tests\tests\produtos.robot">
+<test id="s1-s1-s2-t1" name="Cadastro de produto" line="5">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:17.469678" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:55:17.469678" elapsed="5.325650"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:17.469678" elapsed="5.325650"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:22.796328" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:22.795328" elapsed="0.166273"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:22.795328" elapsed="0.166273"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:22.961601" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:55:22.977164" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:22.961601" elapsed="0.092613"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:22.961601" elapsed="0.092613"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:23.055217" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:23.055217" elapsed="0.247331"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:24.302854" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:23.302548" elapsed="1.000306"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:23.054214" elapsed="1.248640"/>
+</kw>
+<kw name=" Clicar no botão gerenciar produtos">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:24.303859" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Produtos')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Produtos')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:24.302854" elapsed="0.226264"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:25.529349" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:24.529118" elapsed="1.000231"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:24.302854" elapsed="1.226495"/>
+</kw>
+<kw name="Clicar no botão adicionar produtos">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:25.529349" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1t9maor-MuiButtonBase-root-MuiButton-root'][contains(.,'Adicionar Produto')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1t9maor-MuiButtonBase-root-MuiButton-root'][contains(.,'Adicionar Produto')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:25.529349" elapsed="0.291961"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:26.822817" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:25.821310" elapsed="1.001507"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:25.529349" elapsed="1.293468"/>
+</kw>
+<kw name="Inserir o nome do produto">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:26.822817" level="INFO">Typing text 'Produto Teste Robot' into text field '//input[contains(@placeholder,'Nome do produto')]'.</msg>
+<arg>//input[contains(@placeholder,'Nome do produto')]</arg>
+<arg>Produto Teste Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:26.822817" elapsed="0.282475"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:28.106786" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:27.106290" elapsed="1.000496"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:26.822817" elapsed="1.283969"/>
+</kw>
+<kw name="Inserir a descrição do produto">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:28.106786" level="INFO">Typing text 'Produto teste usando robot' into text field '//textarea[contains(@rows,'4')]'.</msg>
+<arg>//textarea[contains(@rows,'4')]</arg>
+<arg>Produto teste usando robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:28.106786" elapsed="0.309425"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:29.416717" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:28.416211" elapsed="1.000506"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:28.106786" elapsed="1.309931"/>
+</kw>
+<kw name="Inserir o preço do produto">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:29.417225" level="INFO">Typing text '99' into text field '//input[contains(@placeholder,'0,00')]'.</msg>
+<arg>//input[contains(@placeholder,'0,00')]</arg>
+<arg>99</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:29.417225" elapsed="0.049558"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:30.467232" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:29.466783" elapsed="1.000449"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:29.417225" elapsed="1.050007"/>
+</kw>
+<kw name="Inserir o estado do produto">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:30.467232" level="INFO">Clicking element 'xpath=//div[@role="combobox" and @aria-labelledby]'.</msg>
+<arg>xpath=//div[@role="combobox" and @aria-labelledby]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:30.467232" elapsed="0.235305"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(text(), "São Paulo")]</arg>
+<arg>2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-24T12:55:30.703539" elapsed="0.008514"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:30.712053" level="INFO">Clicking element 'xpath=//li[contains(text(), "São Paulo")]'.</msg>
+<arg>xpath=//li[contains(text(), "São Paulo")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:30.712053" elapsed="0.272217"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:31.984791" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:30.984270" elapsed="1.000521"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:30.467232" elapsed="1.517559"/>
+</kw>
+<kw name="Inserir a categoria do produto">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[contains(., "Categoria")]/following::div[@role="combobox"][1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-24T12:55:31.985296" elapsed="0.006001"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:31.992321" level="INFO">Clicking element 'xpath=//label[contains(., "Categoria")]/following::div[@role="combobox"][1]'.</msg>
+<arg>xpath=//label[contains(., "Categoria")]/following::div[@role="combobox"][1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:31.992321" elapsed="0.225041"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//ul[@role="listbox"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-24T12:55:32.217362" elapsed="0.007508"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:32.224870" level="INFO">Clicking element 'xpath=//ul[@role="listbox"]//li[normalize-space(.)="Moda Sustentável"]'.</msg>
+<arg>xpath=//ul[@role="listbox"]//li[normalize-space(.)="Moda Sustentável"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:32.224870" elapsed="0.234616"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:33.459571" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:32.459486" elapsed="1.000085"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:31.985296" elapsed="1.474275"/>
+</kw>
+<kw name="Inserir o telefone do vendedor">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:33.459571" level="INFO">Typing text '11999999999' into text field '//input[contains(@placeholder,'(XX) XXXXX-XXXX')]'.</msg>
+<arg>//input[contains(@placeholder,'(XX) XXXXX-XXXX')]</arg>
+<arg>11999999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:33.459571" elapsed="0.180464"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:34.640061" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:33.640035" elapsed="1.000026"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:33.459571" elapsed="1.180490"/>
+</kw>
+<kw name="Inserir a url da imagem">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:34.640061" level="INFO">Typing text 'urlteste' into text field 'css=[data-testid="input-url"]'.</msg>
+<arg>css=[data-testid="input-url"]</arg>
+<arg>urlteste</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:34.640061" elapsed="0.140957"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:34.640061" elapsed="0.140957"/>
+</kw>
+<kw name="Clicar no botão adicionar produto">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:35.782214" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:34.781018" elapsed="1.001196"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:35.782214" level="INFO">Clicking button '//button[@type='submit']'.</msg>
+<arg>//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:35.782214" elapsed="0.281882"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:34.781018" elapsed="1.283078"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:55:36.064096" elapsed="2.713858"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:36.064096" elapsed="2.713858"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:17.469678" elapsed="21.308276"/>
+</test>
+<test id="s1-s1-s2-t2" name="Editar produto" line="22">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:38.779953" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:55:38.778951" elapsed="5.450921"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:38.778951" elapsed="5.450921"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:44.230872" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:44.230872" elapsed="0.148065"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:44.229872" elapsed="0.150064"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:44.379936" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:55:44.388446" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:44.379936" elapsed="0.113731"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:44.379936" elapsed="0.113731"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:44.494668" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:44.494668" elapsed="0.232468"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:45.728505" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:44.727136" elapsed="1.001369"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:44.493667" elapsed="1.234838"/>
+</kw>
+<kw name=" Clicar no botão gerenciar produtos">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:45.728505" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Produtos')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Produtos')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:45.728505" elapsed="0.227782"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:46.957447" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:45.956287" elapsed="1.001160"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:45.728505" elapsed="1.228942"/>
+</kw>
+<kw name="Clicar no ícone de lápis para editar o produto">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:46.957447" level="INFO">Clicking element 'css=[data-testid="edit-button-Produto Teste Robot"]'.</msg>
+<arg>css=[data-testid="edit-button-Produto Teste Robot"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:46.957447" elapsed="0.265494"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:48.223965" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:47.222941" elapsed="1.001024"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:46.957447" elapsed="1.266518"/>
+</kw>
+<kw name="Inserir o nome do produto">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:48.223965" level="INFO">Typing text 'Produto Teste Robot' into text field '//input[contains(@placeholder,'Nome do produto')]'.</msg>
+<arg>//input[contains(@placeholder,'Nome do produto')]</arg>
+<arg>Produto Teste Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:48.223965" elapsed="0.281453"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:49.505949" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:48.505418" elapsed="1.000531"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:48.223965" elapsed="1.281984"/>
+</kw>
+<kw name="Inserir a descrição do produto">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:49.506955" level="INFO">Typing text 'Produto teste usando robot' into text field '//textarea[contains(@rows,'4')]'.</msg>
+<arg>//textarea[contains(@rows,'4')]</arg>
+<arg>Produto teste usando robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:49.505949" elapsed="0.396831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:50.903252" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:49.902780" elapsed="1.000472"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:49.505949" elapsed="1.397303"/>
+</kw>
+<kw name="Inserir o preço do produto">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:50.903252" level="INFO">Typing text '99' into text field '//input[contains(@placeholder,'0,00')]'.</msg>
+<arg>//input[contains(@placeholder,'0,00')]</arg>
+<arg>99</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:50.903252" elapsed="0.067742"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:51.972493" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:50.972023" elapsed="1.000470"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:50.903252" elapsed="1.069241"/>
+</kw>
+<kw name="Inserir o estado do produto">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:51.973499" level="INFO">Clicking element 'xpath=//div[@role="combobox" and @aria-labelledby]'.</msg>
+<arg>xpath=//div[@role="combobox" and @aria-labelledby]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:51.972493" elapsed="0.231411"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//li[contains(text(), "São Paulo")]</arg>
+<arg>2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-24T12:55:52.204910" elapsed="0.008505"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:52.213415" level="INFO">Clicking element 'xpath=//li[contains(text(), "São Paulo")]'.</msg>
+<arg>xpath=//li[contains(text(), "São Paulo")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:52.213415" elapsed="0.234744"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:53.448309" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:52.448159" elapsed="1.000150"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:51.972493" elapsed="1.475816"/>
+</kw>
+<kw name="Inserir a categoria do produto">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//label[contains(., "Categoria")]/following::div[@role="combobox"][1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-24T12:55:53.448309" elapsed="0.006555"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:53.455864" level="INFO">Clicking element 'xpath=//label[contains(., "Categoria")]/following::div[@role="combobox"][1]'.</msg>
+<arg>xpath=//label[contains(., "Categoria")]/following::div[@role="combobox"][1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:53.455864" elapsed="0.229502"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//ul[@role="listbox"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-24T12:55:53.685366" elapsed="0.006519"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:53.691885" level="INFO">Clicking element 'xpath=//ul[@role="listbox"]//li[normalize-space(.)="Moda Sustentável"]'.</msg>
+<arg>xpath=//ul[@role="listbox"]//li[normalize-space(.)="Moda Sustentável"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:53.691885" elapsed="0.211846"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:54.904119" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:53.903731" elapsed="1.000388"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:53.448309" elapsed="1.455810"/>
+</kw>
+<kw name="Inserir o telefone do vendedor">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:54.904119" level="INFO">Typing text '11999999999' into text field '//input[contains(@placeholder,'(XX) XXXXX-XXXX')]'.</msg>
+<arg>//input[contains(@placeholder,'(XX) XXXXX-XXXX')]</arg>
+<arg>11999999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:54.904119" elapsed="0.197481"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:56.103127" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:55.102596" elapsed="1.000531"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:54.904119" elapsed="1.199008"/>
+</kw>
+<kw name="Inserir a url da imagem">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:56.103127" level="INFO">Typing text 'urlteste' into text field 'css=[data-testid="input-url"]'.</msg>
+<arg>css=[data-testid="input-url"]</arg>
+<arg>urlteste</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:56.103127" elapsed="0.150985"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:56.103127" elapsed="0.150985"/>
+</kw>
+<kw name="Clicar no botão salvar alterações">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:55:56.255111" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1my2kr7-MuiButtonBase-root-MuiButton-root'][contains(.,'Atualizar Produto')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-1my2kr7-MuiButtonBase-root-MuiButton-root'][contains(.,'Atualizar Produto')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:55:56.255111" elapsed="0.230984"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:55:57.487351" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:55:56.486095" elapsed="1.001256"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:56.254112" elapsed="1.233239"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:55:57.487351" elapsed="2.796623"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:57.487351" elapsed="2.796623"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:55:38.778951" elapsed="21.505023"/>
+</test>
+<test id="s1-s1-s2-t3" name="Exclusão de produto" line="39">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:00.285974" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:56:00.284975" elapsed="5.376615"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:00.284975" elapsed="5.377619"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:05.662594" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:05.662594" elapsed="0.189970"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:05.662594" elapsed="0.189970"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:05.853569" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:56:05.861624" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:05.852564" elapsed="0.115272"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:05.852564" elapsed="0.115272"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:05.969341" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:05.969341" elapsed="0.252047"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:07.222583" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:06.221388" elapsed="1.001195"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:05.969341" elapsed="1.253242"/>
+</kw>
+<kw name=" Clicar no botão gerenciar produtos">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:07.222583" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Produtos')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Produtos')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:07.222583" elapsed="0.226686"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:08.449383" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:07.449269" elapsed="1.000114"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:07.222583" elapsed="1.226800"/>
+</kw>
+<kw name="Clicar no ícone de lixeira para deletar o produto">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:08.449383" level="INFO">Clicking element 'css=[data-testid="delete-button-Produto Teste Robot"]'.</msg>
+<arg>css=[data-testid="delete-button-Produto Teste Robot"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:08.449383" elapsed="0.234290"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:09.683709" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:08.683673" elapsed="1.000036"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:08.449383" elapsed="1.234326"/>
+</kw>
+<kw name="Confirmar a exclusão do produto">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:09.684716" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-hpzj3n-MuiButtonBase-root-MuiButton-root'][contains(.,'Excluir')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-hpzj3n-MuiButtonBase-root-MuiButton-root'][contains(.,'Excluir')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:09.683709" elapsed="0.239837"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:10.924891" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:09.924543" elapsed="1.000348"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:09.683709" elapsed="1.241182"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:56:10.924891" elapsed="2.695804"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:10.924891" elapsed="2.696807"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:00.284975" elapsed="13.336723"/>
+</test>
+<test id="s1-s1-s2-t4" name="Visualizar Produto" line="49">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:13.622696" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:56:13.622696" elapsed="5.401352"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:13.622696" elapsed="5.401352"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:19.025086" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:19.024048" elapsed="0.160625"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:19.024048" elapsed="0.160625"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:19.186669" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:56:19.195190" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:19.185669" elapsed="0.083675"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:19.184673" elapsed="0.085676"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:19.270349" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:19.270349" elapsed="0.225354"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:20.496135" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:19.495703" elapsed="1.000432"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:19.270349" elapsed="1.225786"/>
+</kw>
+<kw name="Clicar no botão ver detalhes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:20.496135" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-12k55ub-MuiButtonBase-root-MuiButton-root'][contains(.,'Ver Detalhes')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-12k55ub-MuiButtonBase-root-MuiButton-root'][contains(.,'Ver Detalhes')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:20.496135" elapsed="0.228245"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:20.496135" elapsed="0.228245"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:56:20.725381" elapsed="3.954786"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:20.724380" elapsed="3.955787"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:13.621698" elapsed="11.058469"/>
+</test>
+<status status="PASS" start="2025-06-24T12:55:17.467677" elapsed="67.212490"/>
+</suite>
+<suite id="s1-s1-s3" name="Usuarios" source="C:\Users\iwata\Desktop\Faculdade\EcoMarket\eco-market\robot-tests\tests\usuarios.robot">
+<test id="s1-s1-s3-t1" name="Login de Usuário EcoMarket" line="6">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:24.683173" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:56:24.683173" elapsed="6.069820"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:24.683173" elapsed="6.070821"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:30.753994" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:30.753994" elapsed="0.139829"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:30.753994" elapsed="0.140829"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:30.894823" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:56:30.945412" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:30.894823" elapsed="0.132283"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:30.894823" elapsed="0.132283"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:31.028107" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:31.028107" elapsed="0.224727"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:32.252859" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:31.252834" elapsed="1.000025"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:31.027106" elapsed="1.225753"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:56:32.252859" elapsed="2.990453"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:32.252859" elapsed="2.990453"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:24.683173" elapsed="10.560139"/>
+</test>
+<test id="s1-s1-s3-t2" name="Criar usuário" line="13">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:35.244315" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:56:35.244315" elapsed="5.443326"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:35.244315" elapsed="5.443326"/>
+</kw>
+<kw name="Clicar no botão de registro">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:40.688640" level="INFO">Clicking element '//a[@class='MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ohipl2-MuiTypography-root-MuiLink-root'][contains(.,'Crie uma conta')]'.</msg>
+<arg>//a[@class='MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-ohipl2-MuiTypography-root-MuiLink-root'][contains(.,'Crie uma conta')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:40.687641" elapsed="0.291773"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:40.687641" elapsed="0.292780"/>
+</kw>
+<kw name="Inserir nome de usuário">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:40.980421" level="INFO">Typing text 'testedelete' into text field '//input[contains(@id,'«r1»')]'.</msg>
+<arg>//input[contains(@id,'«r1»')]</arg>
+<arg>testedelete</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:40.980421" elapsed="0.204340"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:40.980421" elapsed="0.204340"/>
+</kw>
+<kw name="Inserir email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:41.185761" level="INFO">Typing text 'testedelete@teste.com' into text field '//input[contains(@type,'email')]'.</msg>
+<arg>//input[contains(@type,'email')]</arg>
+<arg>testedelete@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:41.185761" elapsed="0.163942"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.185761" elapsed="0.163942"/>
+</kw>
+<kw name="Inserir CPF">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:41.350708" level="INFO">Typing text '44179045028' into text field '//input[contains(@id,'«r3»')]'.</msg>
+<arg>//input[contains(@id,'«r3»')]</arg>
+<arg>44179045028</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:41.349703" elapsed="0.086284"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.349703" elapsed="0.086284"/>
+</kw>
+<kw name="Inserir senha nova válida">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:41.436989" level="INFO">Typing text 'minhaSenha123' into text field 'css=[data-testid="input-senha"]'.</msg>
+<arg>css=[data-testid="input-senha"]</arg>
+<arg>minhaSenha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:41.436989" elapsed="0.099223"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.436989" elapsed="0.099223"/>
+</kw>
+<kw name="Inserir a senha novamente para confirmação">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:41.537211" level="INFO">Typing text 'minhaSenha123' into text field 'css=[data-testid="input-confirmar-senha"]'.</msg>
+<arg>css=[data-testid="input-confirmar-senha"]</arg>
+<arg>minhaSenha123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:41.537211" elapsed="0.096925"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.536212" elapsed="0.097924"/>
+</kw>
+<kw name="Clicar no botão criar conta">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:41.634136" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Criar Conta')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Criar Conta')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:41.634136" elapsed="0.225531"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.634136" elapsed="0.225531"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:35.244315" elapsed="6.615352"/>
+</test>
+<test id="s1-s1-s3-t3" name="Excluir usuário" line="23">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:41.861144" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:56:41.861144" elapsed="5.398283"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.861144" elapsed="5.398283"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:47.260434" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:47.260434" elapsed="0.146880"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:47.260434" elapsed="0.146880"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:47.407314" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:56:47.419342" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:47.407314" elapsed="0.093973"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:47.407314" elapsed="0.093973"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:47.501287" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:47.501287" elapsed="0.237414"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:48.738842" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:47.738701" elapsed="1.000141"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:47.501287" elapsed="1.237555"/>
+</kw>
+<kw name="Clicar no botão dashboard">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:48.739356" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Dashboard')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Dashboard')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:48.739356" elapsed="0.237546"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:49.977027" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:48.976902" elapsed="1.000125"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:48.739356" elapsed="1.237671"/>
+</kw>
+<kw name="Clicar no botão gerenciar usuários">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:49.977027" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-1qh9735-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Usuários')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-1qh9735-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Usuários')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:49.977027" elapsed="0.246589"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:51.224655" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:50.223616" elapsed="1.001039"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:49.977027" elapsed="1.247628"/>
+</kw>
+<kw name="Clicar no ícone de lixeira">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:51.224655" level="INFO">Clicking element 'css=[data-testid="delete-button-testedelete"]'.</msg>
+<arg>css=[data-testid="delete-button-testedelete"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:56:51.224655" elapsed="0.230571"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:56:52.456462" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:56:51.456229" elapsed="1.000233"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:51.224655" elapsed="1.231807"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:56:52.456462" elapsed="2.691869"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:52.456462" elapsed="2.691869"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:41.861144" elapsed="13.287187"/>
+</test>
+<test id="s1-s1-s3-t4" name="Editar usuário" line="33">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:56:55.149329" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:56:55.149329" elapsed="5.382840"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:55.149329" elapsed="5.382840"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:00.533171" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:00.533171" elapsed="0.205122"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:00.532169" elapsed="0.206124"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:00.739298" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:57:00.748357" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:00.739298" elapsed="0.092182"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:00.739298" elapsed="0.092182"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:00.832481" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:00.832481" elapsed="0.266671"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:57:02.099446" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:57:01.099152" elapsed="1.000294"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:00.831480" elapsed="1.267966"/>
+</kw>
+<kw name="Clicar no botão de perfil">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.100453" level="INFO">Clicking button '//button[contains(@class,'MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeEnd MuiIconButton-sizeLarge css-q9qvak-MuiButtonBase-root-MuiIconButton-root')]'.</msg>
+<arg>//button[contains(@class,'MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeEnd MuiIconButton-sizeLarge css-q9qvak-MuiButtonBase-root-MuiIconButton-root')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.099446" elapsed="0.228827"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.099446" elapsed="0.228827"/>
+</kw>
+<kw name="Clicar no botão de editar perfil">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.329277" level="INFO">Clicking element 'xpath=//li[contains(., 'Perfil')]'.</msg>
+<arg>xpath=//li[contains(., 'Perfil')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.329277" elapsed="0.252655"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.329277" elapsed="0.252655"/>
+</kw>
+<kw name="Inserir nome de usuário na aba de perfil">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.582932" level="INFO">Typing text 'teste123' into text field '//input[contains(@value,'teste123')]'.</msg>
+<arg>//input[contains(@value,'teste123')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.582932" elapsed="0.110743"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.582932" elapsed="0.110743"/>
+</kw>
+<kw name="Inserir email na aba de perfil">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.694675" level="INFO">Typing text 'teste@teste.com' into text field '//input[contains(@type,'email')]'.</msg>
+<arg>//input[contains(@type,'email')]</arg>
+<arg>teste@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.694675" elapsed="0.110886"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.694675" elapsed="0.111883"/>
+</kw>
+<kw name="Inserir CPF na aba de perfil">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.806558" level="INFO">Typing text '60682604100' into text field '//input[contains(@value,'606.826.041-00')]'.</msg>
+<arg>//input[contains(@value,'606.826.041-00')]</arg>
+<arg>60682604100</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.806558" elapsed="0.071636"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.806558" elapsed="0.071636"/>
+</kw>
+<kw name="Inserir senha nova válida na aba de perfil">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.879196" level="INFO">Typing text 'teste123' into text field '//input[contains(@value,'606.826.041-00')]'.</msg>
+<arg>//input[contains(@value,'606.826.041-00')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.878194" elapsed="0.032682"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.878194" elapsed="0.032682"/>
+</kw>
+<kw name="Clicar no botão salvar alterações">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:02.911877" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Salvar Alterações')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Salvar Alterações')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.910876" elapsed="0.036061"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.910876" elapsed="0.036061"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:57:02.946937" elapsed="2.752306"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:02.946937" elapsed="2.753657"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:56:55.149329" elapsed="10.551265"/>
+</test>
+<test id="s1-s1-s3-t5" name="Alterar função de usuário como administrador" line="47">
+<kw name="Abrir a página do EcoMarket">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:05.701594" level="INFO">Opening browser 'firefox' to base url 'localhost:3000/login'.</msg>
+<arg>localhost:3000/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-24T12:57:05.701594" elapsed="5.466245"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:05.701594" elapsed="5.466245"/>
+</kw>
+<kw name="Inserir nome de usuário ou email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:11.168845" level="INFO">Typing text 'teste123' into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:11.168845" elapsed="0.161024"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:11.168845" elapsed="0.161024"/>
+</kw>
+<kw name="Inserir senha válida">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:11.330869" level="INFO">Typing password into text field '//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]'.</msg>
+<msg time="2025-06-24T12:57:11.339027" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//input[contains(@class,'MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-qve9l1-MuiInputBase-input-MuiOutlinedInput-input')]</arg>
+<arg>teste123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:11.329869" elapsed="0.114970"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:11.329869" elapsed="0.114970"/>
+</kw>
+<kw name="Clicar no botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:11.445839" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-disableElevation MuiButton-fullWidth css-fgncbu-MuiButtonBase-root-MuiButton-root'][contains(.,'Entrar')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:11.445839" elapsed="0.230329"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:57:12.676443" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:57:11.676168" elapsed="1.000275"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:11.444839" elapsed="1.231604"/>
+</kw>
+<kw name="Clicar no botão dashboard">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:12.676443" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Dashboard')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-plnrbk-MuiButtonBase-root-MuiButton-root'][contains(.,'Dashboard')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:12.676443" elapsed="0.239340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:57:13.917199" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:57:12.916784" elapsed="1.000415"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:12.676443" elapsed="1.240756"/>
+</kw>
+<kw name="Clicar no botão gerenciar usuários">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:13.917199" level="INFO">Clicking button '//button[@class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-1qh9735-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Usuários')]'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-colorPrimary css-1qh9735-MuiButtonBase-root-MuiButton-root'][contains(.,'Gerenciar Usuários')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:13.917199" elapsed="0.228233"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:57:15.146521" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:57:14.145432" elapsed="1.001089"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:13.917199" elapsed="1.229322"/>
+</kw>
+<kw name="Clicar no ícone de lápis para editar o usuário">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:15.146521" level="INFO">Clicking element 'css=[data-testid="role-edit-button-testedelete"]'.</msg>
+<arg>css=[data-testid="role-edit-button-testedelete"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:15.146521" elapsed="0.227394"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-24T12:57:16.374935" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-24T12:57:15.373915" elapsed="1.001020"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:15.146521" elapsed="1.228414"/>
+</kw>
+<kw name="Clicar no dropdown de função">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:16.374935" level="INFO">Clicking element '(//span[@class='MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label'])[3]'.</msg>
+<arg>(//span[@class='MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label'])[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:16.374935" elapsed="0.223989"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:16.374935" elapsed="0.223989"/>
+</kw>
+<kw name="Clicar na função de vendedor">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-24T12:57:16.599932" level="INFO">Clicking element '//span[@class='MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label'][contains(.,'Vendedor')]'.</msg>
+<arg>//span[@class='MuiChip-label MuiChip-labelSmall css-eccknh-MuiChip-label'][contains(.,'Vendedor')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-24T12:57:16.599932" elapsed="0.210598"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:16.598924" elapsed="0.212612"/>
+</kw>
+<kw name="Fechar Navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-24T12:57:16.811536" elapsed="2.709633"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:16.811536" elapsed="2.709633"/>
+</kw>
+<status status="PASS" start="2025-06-24T12:57:05.700594" elapsed="13.820575"/>
+</test>
+<status status="PASS" start="2025-06-24T12:56:24.681176" elapsed="54.839993"/>
+</suite>
+<status status="PASS" start="2025-06-24T12:55:08.693172" elapsed="130.828996"/>
+</suite>
+<status status="PASS" start="2025-06-24T12:55:08.667862" elapsed="130.855305"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot-Tests" id="s1" pass="10" fail="0" skip="0">Robot-Tests</stat>
+<stat name="Tests" id="s1-s1" pass="10" fail="0" skip="0">Robot-Tests.Tests</stat>
+<stat name="Login" id="s1-s1-s1" pass="1" fail="0" skip="0">Robot-Tests.Tests.Login</stat>
+<stat name="Produtos" id="s1-s1-s2" pass="4" fail="0" skip="0">Robot-Tests.Tests.Produtos</stat>
+<stat name="Usuarios" id="s1-s1-s3" pass="5" fail="0" skip="0">Robot-Tests.Tests.Usuarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
