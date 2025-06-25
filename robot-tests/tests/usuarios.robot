@@ -133,7 +133,7 @@ Inserir CPF na aba de perfil
     Input Text    //input[contains(@value,'606.826.041-00')]    60682604100
 
 Inserir senha nova válida na aba de perfil
-    Input Text    //input[contains(@aria-describedby,'«ro»-helper-text')]    teste123
+    Input Password    xpath=//input[@id="«rg»"]     teste123
 
 Clicar no ícone de lápis para editar o usuário
     Click Element    css=[data-testid="role-edit-button-testedelete"]
