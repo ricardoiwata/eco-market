@@ -132,6 +132,7 @@ Confirmar a exclusão do produto
 
 Clicar no botão ver detalhes
     Click Button    //button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-12k55ub-MuiButtonBase-root-MuiButton-root'][contains(.,'Ver Detalhes')]
+    Sleep    2s
 
 Fechar Navegador
     Close Browser
