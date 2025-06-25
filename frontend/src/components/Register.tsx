@@ -276,7 +276,7 @@ const Register: React.FC = () => {
 
           <StyledTextField
             label="Confirmar Senha"
-            type={showPassword ? "text" : "password"}
+            type={showConfirmPassword ? "text" : "password"}
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required

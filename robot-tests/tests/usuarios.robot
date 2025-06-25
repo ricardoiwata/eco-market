@@ -19,6 +19,7 @@ Criar usuário
     Inserir senha nova válida
     Inserir a senha novamente para confirmação
     Clicar no botão criar conta
+    Fechar Navegador
 
 Editar usuário
     Abrir a página do EcoMarket
