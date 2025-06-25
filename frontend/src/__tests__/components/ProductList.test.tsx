@@ -1,5 +1,3 @@
-// src/__tests__/components/ProductList.test.tsx
-
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import ProductList from "../../components/ProductList";

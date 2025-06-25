@@ -28,8 +28,6 @@ const AdminDashboard: React.FC = () => {
     const fetchStats = async () => {
       setLoading(true);
       try {
-        // In a real app, you would have an endpoint for dashboard stats
-        // For now, we'll fetch products and users separately
         const [productsResponse, usersResponse] = await Promise.all([
           api.get("/products"),
           api.get("/users"),
@@ -59,7 +57,12 @@ const AdminDashboard: React.FC = () => {
         <HeaderPattern />
         <Container maxWidth="lg">
           <Box display="flex" alignItems="center" mb={2}>
-            <Typography variant="h4" component="h1" fontWeight="bold" color="white">
+            <Typography
+              variant="h4"
+              component="h1"
+              fontWeight="bold"
+              color="white"
+            >
               Painel Administrativo
             </Typography>
           </Box>
@@ -74,12 +77,21 @@ const AdminDashboard: React.FC = () => {
 
           {loading ? (
             <Box display="flex" justifyContent="center" py={4}>
-              <CircularProgress size={40} thickness={4} sx={{ color: "#2e7d32" }} />
+              <CircularProgress
+                size={40}
+                thickness={4}
+                sx={{ color: "#2e7d32" }}
+              />
             </Box>
           ) : (
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>
-                <Card sx={{ borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+                <Card
+                  sx={{
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  }}
+                >
                   <CardContent>
                     <Box display="flex" alignItems="center" mb={2}>
                       <Box
@@ -119,7 +131,12 @@ const AdminDashboard: React.FC = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} md={4}>
-                <Card sx={{ borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+                <Card
+                  sx={{
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  }}
+                >
                   <CardContent>
                     <Box display="flex" alignItems="center" mb={2}>
                       <Box
@@ -159,7 +176,12 @@ const AdminDashboard: React.FC = () => {
               </Grid>
 
               <Grid item xs={12} sm={6} md={4}>
-                <Card sx={{ borderRadius: "12px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)" }}>
+                <Card
+                  sx={{
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                  }}
+                >
                   <CardContent>
                     <Box display="flex" alignItems="center" mb={2}>
                       <Box

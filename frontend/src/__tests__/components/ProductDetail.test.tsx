@@ -3,7 +3,6 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import ProductDetail from "../../components/ProductDetail";
 import api from "../../services/api";
 
-// Mock de navegação
 jest.mock("react-router-dom", () => {
   const original = jest.requireActual("react-router-dom");
   return {
@@ -12,7 +11,6 @@ jest.mock("react-router-dom", () => {
   };
 });
 
-// Mock da API
 jest.mock("../../services/api");
 
 const mockProduct = {

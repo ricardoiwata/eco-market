@@ -37,12 +37,10 @@ export const useUsers = () => {
     }
   }
 
-  // NOVA FUNÇÃO PARA ATUALIZAR O PAPEL DO USUÁRIO
   const updateUserRole = async (id: string, role: string) => {
     setLoading(true);
     try {
       const res = await api.put(`/users/${id}`, { role });
-      // Atualiza o usuário no array local
       setUsers((prevUsers) =>
         prevUsers.map((user) =>
           user._id === id ? { ...user, role: res.data.role } : user
@@ -69,6 +67,6 @@ export const useUsers = () => {
     error,
     fetchUsers,
     deleteUser,
-    updateUserRole, // Adiciona a nova função ao retorno
+    updateUserRole,
   }
 }

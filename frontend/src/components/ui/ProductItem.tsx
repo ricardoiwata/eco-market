@@ -1,25 +1,27 @@
-import { Visibility, Info } from "@mui/icons-material"
-import { CardContent, Typography, Box, Grid, } from "@mui/material"
-import { styled } from "@mui/material/styles"
-import type React from "react"
+import { Info, Visibility } from "@mui/icons-material";
+import { Box, CardContent, Grid, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import type React from "react";
 
-import { ProductCard, ProductImage, PriceTag, StyledButton } from "./StyledComponents"
+import {
+  PriceTag,
+  ProductCard,
+  ProductImage,
+  StyledButton,
+} from "./StyledComponents";
 
-
-const ViewDetailsButton = styled(StyledButton)({
-  // Additional styling specific to this button if needed
-})
+const ViewDetailsButton = styled(StyledButton)({});
 
 interface ProductItemProps {
   product: {
-    _id: string
-    name: string
-    description: string
-    price: number
-    image?: string
-    category?: string
-  }
-  onClick: (id: string) => void
+    _id: string;
+    name: string;
+    description: string;
+    price: number;
+    image?: string;
+    category?: string;
+  };
+  onClick: (id: string) => void;
 }
 
 const ProductItem: React.FC<ProductItemProps> = ({ product, onClick }) => {
@@ -27,16 +29,32 @@ const ProductItem: React.FC<ProductItemProps> = ({ product, onClick }) => {
     <Grid item xs={12} sm={6} md={4}>
       <ProductCard onClick={() => onClick(product._id)}>
         <ProductImage
-          image={product.image || `/placeholder.svg?height=300&width=400&text=${encodeURIComponent(product.name)}`}
+          image={
+            product.image ||
+            `/placeholder.svg?height=300&width=400&text=${encodeURIComponent(
+              product.name
+            )}`
+          }
           title={product.name}
         >
           <PriceTag>R$ {product.price.toFixed(2)}</PriceTag>
         </ProductImage>
-        <CardContent sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}>
-          <Typography gutterBottom variant="h6" component="h2" fontWeight="bold">
+        <CardContent
+          sx={{ flexGrow: 1, display: "flex", flexDirection: "column" }}
+        >
+          <Typography
+            gutterBottom
+            variant="h6"
+            component="h2"
+            fontWeight="bold"
+          >
             {product.name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" sx={{ mb: 2, flexGrow: 1 }}>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            sx={{ mb: 2, flexGrow: 1 }}
+          >
             {product.description}
           </Typography>
           <Box display="flex" alignItems="center" mb={2}>
@@ -45,13 +63,17 @@ const ProductItem: React.FC<ProductItemProps> = ({ product, onClick }) => {
               Clique para ver detalhes
             </Typography>
           </Box>
-          <ViewDetailsButton variant="contained" fullWidth startIcon={<Visibility />}>
+          <ViewDetailsButton
+            variant="contained"
+            fullWidth
+            startIcon={<Visibility />}
+          >
             Ver Detalhes
           </ViewDetailsButton>
         </CardContent>
       </ProductCard>
     </Grid>
-  )
-}
+  );
+};
 
-export default ProductItem
+export default ProductItem;

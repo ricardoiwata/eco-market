@@ -4,7 +4,6 @@ import UserManagement from "../../components/admin/UserManagement";
 
 import * as usersHook from "../../hooks/useUsers";
 
-// Mocka o hook uma vez no topo
 jest.mock("../../hooks/useUsers", () => ({
   useUsers: jest.fn(),
 }));
@@ -70,7 +69,7 @@ describe("UserManagement", () => {
     );
 
     const errorElements = screen.getAllByText(/erro ao carregar usuários/i);
-    expect(errorElements.length).toBe(2); // Verifica que só tem 1
+    expect(errorElements.length).toBe(2);
 
     const tryAgainButton = screen.getByRole("button", {
       name: /tentar novamente/i,
@@ -119,21 +118,17 @@ describe("UserManagement", () => {
       </BrowserRouter>
     );
 
-    // Clica no botão de deletar do usuario1
     const deleteButton = screen.getByTestId("delete-button-usuario1");
     fireEvent.click(deleteButton);
 
-    // Diálogo aberto
     expect(screen.getByText(/confirmar exclusão/i)).toBeInTheDocument();
 
     const confirmButton = screen.getByRole("button", { name: /excluir/i });
     fireEvent.click(confirmButton);
 
-    // Espera deleteUser ser chamado
     await waitFor(() => {
       expect(deleteUserMock).toHaveBeenCalledWith("1");
     });
-    // Espera o diálogo fechar
     await waitFor(() => {
       expect(screen.queryByText(/confirmar exclusão/i)).not.toBeInTheDocument();
     });

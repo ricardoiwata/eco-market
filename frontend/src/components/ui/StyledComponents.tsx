@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-// Animation keyframes
 export const floatAnimation = {
   "@keyframes float": {
     "0%": {
@@ -26,7 +25,6 @@ export const floatAnimation = {
   },
 };
 
-// Layout components
 export const PageContainer = styled(Box)(({ theme }) => ({
   minHeight: "100vh",
   backgroundColor: "#f8f9fa",
@@ -47,7 +45,7 @@ export const AuthContainer = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  overflow: "hidden", // Prevent scrolling
+  overflow: "hidden",
   position: "relative",
   [theme.breakpoints.up("sm")]: {
     padding: theme.spacing(4),
@@ -58,11 +56,13 @@ export const AuthContainer = styled(Box)(({ theme }) => ({
     position: "absolute",
     zIndex: -1,
     inset: 0,
-    backgroundImage: "linear-gradient(135deg, #e6f7e9 0%, #c8e6c9 50%, #a5d6a7 100%)",
+    backgroundImage:
+      "linear-gradient(135deg, #e6f7e9 0%, #c8e6c9 50%, #a5d6a7 100%)",
     backgroundSize: "cover",
     backgroundPosition: "center",
     ...theme.applyStyles("dark", {
-      backgroundImage: "linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%)",
+      backgroundImage:
+        "linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%)",
     }),
   },
 }));
@@ -98,7 +98,6 @@ export const EmptyStateContainer = styled(Box)(({ theme }) => ({
   textAlign: "center",
 }));
 
-// Card components
 export const Card = styled(MuiCard)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -142,15 +141,13 @@ export const DetailCard = styled(MuiCard)(({ theme }) => ({
   boxShadow: "0 6px 16px rgba(0, 0, 0, 0.08)",
 }));
 
-// Media components
 export const ProductImage = styled(CardMedia)(({ theme }) => ({
   height: 0,
-  paddingTop: "75%", // 4:3 aspect ratio
+  paddingTop: "75%",
   position: "relative",
   backgroundColor: "#e8f5e9",
 }));
 
-// Form components
 export const StyledTextField = styled(TextField)(({ theme }) => ({
   "& .MuiOutlinedInput-root": {
     borderRadius: "10px",
@@ -167,7 +164,7 @@ export const StyledTextField = styled(TextField)(({ theme }) => ({
     color: "#2e7d32",
   },
   "&.Mui-error .MuiOutlinedInput-notchedOutline": {
-    borderColor: "#f44336", // Cor do contorno para erro
+    borderColor: "#f44336",
   },
 }));
 
@@ -185,7 +182,6 @@ export const SearchBox = styled(TextField)(({ theme }) => ({
   },
 }));
 
-// Button components
 export const StyledButton = styled(Button)(({ theme }) => ({
   borderRadius: "10px",
   padding: "12px 0",
@@ -234,7 +230,6 @@ export const WhatsAppButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-// Label components
 export const EcoLabel = styled(Chip)(({ theme }) => ({
   position: "absolute",
   top: theme.spacing(1),
@@ -259,7 +254,6 @@ export const PriceTag = styled(Box)(({ theme }) => ({
   boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
 }));
 
-// Icon components
 export const StyledEcoIcon = styled(EcoIcon)(({ theme }) => ({
   fontSize: "2.5rem",
   color: "#2e7d32",
@@ -296,7 +290,6 @@ export const LargeEcoIcon = styled(EcoIcon)(({ theme }) => ({
   },
 }));
 
-// Decorative components
 export const LeafBackground = styled(Box)(({ theme }) => ({
   position: "absolute",
   top: 0,
@@ -311,7 +304,6 @@ export const LeafBackground = styled(Box)(({ theme }) => ({
   zIndex: 0,
 }));
 
-// Typography components
 export const PageTitle = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   color: "#2e7d32",

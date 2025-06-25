@@ -1,5 +1,3 @@
-// src/__tests__/components/Profile.test.tsx
-
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Profile from "../../components/Profile";
@@ -72,7 +70,6 @@ describe("Profile component", () => {
     await screen.findByRole("button", { name: /salvar/i });
     const botaoSalvar = screen.getByRole("button", { name: /salvar/i });
 
-    // Campos inválidos
     fireEvent.change(nomeInput, { target: { value: "a" } });
     fireEvent.change(emailInput, { target: { value: "emailinvalido" } });
     fireEvent.change(cpfInput, { target: { value: "123" } });

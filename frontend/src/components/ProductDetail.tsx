@@ -37,7 +37,6 @@ const ProductDetail: React.FC = () => {
       try {
         const response = await api.get(`/products/${id}`);
 
-        // Add a small delay to show loading state (for demo purposes)
         setTimeout(() => {
           setProduct(response.data);
           setLoading(false);
@@ -61,7 +60,6 @@ const ProductDetail: React.FC = () => {
   };
 
   const handleWhatsApp = () => {
-    // Format phone number and open WhatsApp
     const phoneNumber = product?.sellerPhone?.replace(/\D/g, "") || "";
     const message = `Olá! Estou interessado no produto "${product.name}" no EcoMarket.`;
     window.open(
@@ -70,7 +68,6 @@ const ProductDetail: React.FC = () => {
     );
   };
 
-  // Render loading state
   if (loading) {
     return (
       <PageContainer>
@@ -92,7 +89,6 @@ const ProductDetail: React.FC = () => {
     );
   }
 
-  // Render error state
   if (error) {
     return (
       <PageContainer>
@@ -108,7 +104,6 @@ const ProductDetail: React.FC = () => {
     );
   }
 
-  // Render product not found
   if (!product) {
     return (
       <PageContainer>

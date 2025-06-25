@@ -37,7 +37,6 @@ const Profile: React.FC = () => {
 
   const navigate = useNavigate();
 
-  // Buscar informações do usuário ao montar
   useEffect(() => {
     const fetchProfile = async () => {
       setLoading(true);
@@ -55,7 +54,6 @@ const Profile: React.FC = () => {
     fetchProfile();
   }, []);
 
-  // Reutilize funções de validação e formatação do CPF do cadastro!
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
     if (username.length < 3) newErrors.username = "Nome muito curto";
@@ -88,7 +86,6 @@ const Profile: React.FC = () => {
       )}-${digits.slice(9, 11)}`;
   }
 
-  // Atualizar perfil
   const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     setSuccess(null);
@@ -97,7 +94,7 @@ const Profile: React.FC = () => {
     setLoading(true);
     try {
       const payload: any = { username, email, cpf };
-      if (password) payload.password = password; // só envia se for alterar senha
+      if (password) payload.password = password;
       await api.put("/users/me", payload);
       setSuccess("Perfil atualizado com sucesso!");
       setPassword("");

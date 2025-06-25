@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Search, Sort } from "@mui/icons-material";
 import EcoIcon from "@mui/icons-material/Spa";
 import {
@@ -57,21 +58,17 @@ const ProductList: React.FC = () => {
   const navigate = useNavigate();
   const debounceTimeout = useRef<NodeJS.Timeout | null>(null);
 
-  // menu do ordenar
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const menuOpen = Boolean(anchorEl);
 
-  // Debounce para busca/filtro
   useEffect(() => {
     if (debounceTimeout.current) clearTimeout(debounceTimeout.current);
     debounceTimeout.current = setTimeout(() => fetchProducts(), 500);
     return () => {
       if (debounceTimeout.current) clearTimeout(debounceTimeout.current);
     };
-    // eslint-disable-next-line
   }, [searchTerm, selectedCategory, priceRange]);
 
-  // Se mudar filtro, busca ou sort, volta pra página 1
   useEffect(
     () => setPage(1),
     [searchTerm, selectedCategory, priceRange, sortBy]
@@ -98,7 +95,6 @@ const ProductList: React.FC = () => {
     }
   };
 
-  // Sort dinâmico
   const getSortedProducts = () => {
     let sorted = [...products];
     switch (sortBy) {
@@ -120,7 +116,6 @@ const ProductList: React.FC = () => {
     return sorted;
   };
 
-  // Produtos paginados
   const paginatedProducts = getSortedProducts().slice(
     (page - 1) * itemsPerPage,
     page * itemsPerPage
@@ -141,7 +136,6 @@ const ProductList: React.FC = () => {
   };
   const handleCategoryChange = (cat: string) => setSelectedCategory(cat);
 
-  // Ordenar
   const handleSortMenuClick = (event: React.MouseEvent<HTMLButtonElement>) =>
     setAnchorEl(event.currentTarget);
   const handleSortMenuClose = () => setAnchorEl(null);
@@ -153,7 +147,6 @@ const ProductList: React.FC = () => {
   const handleProductClick = (productId: string) =>
     navigate(`/products/${productId}`);
 
-  // Mensagem "Nenhum produto" apropriada
   const getEmptyMessage = () => {
     if (searchTerm)
       return `Não encontramos produtos correspondentes a "${searchTerm}".`;
@@ -187,7 +180,6 @@ const ProductList: React.FC = () => {
     );
   }
 
-  // --- JSX ---
   return (
     <PageContainer>
       <Header sx={{ position: "relative", zIndex: 1, width: "100%" }}>

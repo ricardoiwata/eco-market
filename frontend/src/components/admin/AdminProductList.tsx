@@ -40,7 +40,7 @@ const AdminProductList: React.FC = () => {
     useProducts();
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [productToDelete, setProductToDelete] = useState<string | null>(null);
-  const [snackbarOpen, setSnackbarOpen] = useState(false); // Estado para o Snackbar
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleAddProduct = () => {
@@ -77,7 +77,7 @@ const AdminProductList: React.FC = () => {
   };
 
   const handleSnackbarClose = () => {
-    setSnackbarOpen(false); // Função para fechar o Snackbar
+    setSnackbarOpen(false);
   };
 
   if (loading) {
@@ -250,9 +250,9 @@ const AdminProductList: React.FC = () => {
               backgroundColor: "rgba(255, 255, 255, 0.04)",
               width: "100px",
               "&:hover": {
-                color: "#ffffff", // Cor do texto ao passar o mouse
-                borderColor: "#1b5e20", // Você também pode ajustar a borda no hover, se necessário
-              }, // Aumenta a largura
+                color: "#ffffff",
+                borderColor: "#1b5e20",
+              },
             }}
           >
             Cancelar

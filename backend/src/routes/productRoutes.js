@@ -4,7 +4,6 @@ const Product = require("../models/Product");
 
 const router = express.Router();
 
-// Criar um novo produto
 router.post("/", async (req, res) => {
   const { name, description, price, category, state, image, sellerPhone } =
     req.body;
@@ -27,7 +26,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Obter todos os produtos OU buscar por nome/categoria
 router.get("/", async (req, res) => {
   const { search, category, priceMin, priceMax } = req.query;
   let filter = {};
@@ -45,7 +43,7 @@ router.get("/", async (req, res) => {
     res.status(500).json({ message: "Erro ao obter produtos", error });
   }
 });
-// Obter um produto por ID
+
 router.get("/:id", async (req, res) => {
   const { id } = req.params;
 
@@ -64,7 +62,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// Atualizar um produto
 router.put("/:id", async (req, res) => {
   const { id } = req.params;
 
@@ -85,7 +82,6 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// Deletar um produto
 router.delete("/:id", async (req, res) => {
   const { id } = req.params;
 

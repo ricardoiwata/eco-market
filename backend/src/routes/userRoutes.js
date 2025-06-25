@@ -9,7 +9,6 @@ const router = express.Router();
 
 const JWT_SECRET = "ecomarket";
 
-// Registro de usuário
 router.post("/", async (req, res) => {
   const { username, password, email, cpf } = req.body;
 
@@ -55,9 +54,6 @@ router.get("/", verifyAdmin, async (req, res) => {
   }
 });
 
-// use o caminho correto
-
-// Obter perfil do próprio usuário:
 router.get("/me", verifyUser, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
@@ -70,16 +66,13 @@ router.get("/me", verifyUser, async (req, res) => {
   }
 });
 
-// Atualizar perfil do próprio usuário:
 router.put("/me", verifyUser, async (req, res) => {
   const updates = req.body;
 
-  // Bloqueia alterações de role por aqui (só admin pode)
   if (updates.role) {
     delete updates.role;
   }
 
-  // Se for alterar senha
   if (updates.password) {
     updates.password = await bcrypt.hash(updates.password, 10);
   } else {
@@ -101,7 +94,6 @@ router.put("/me", verifyUser, async (req, res) => {
   }
 });
 
-// Login de usuário
 router.post("/login", async (req, res) => {
   const { username, password } = req.body;
 
@@ -123,7 +115,6 @@ router.post("/login", async (req, res) => {
   res.json({ token, role });
 });
 
-// Rota para criar um novo usuário com papel de admin
 router.post("/admin", verifyAdmin, async (req, res) => {
   const { username, password, email, cpf, role } = req.body;
 
@@ -170,7 +161,6 @@ router.post("/admin", verifyAdmin, async (req, res) => {
   }
 });
 
-// Rota para editar um usuário
 router.put("/:userId", verifyAdmin, async (req, res) => {
   const { userId } = req.params;
   const updates = req.body;
@@ -197,7 +187,6 @@ router.put("/:userId", verifyAdmin, async (req, res) => {
   }
 });
 
-// Rota para deletar um usuário
 router.delete("/:userId", verifyAdmin, async (req, res) => {
   const { userId } = req.params;
 

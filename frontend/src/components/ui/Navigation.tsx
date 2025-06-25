@@ -68,7 +68,6 @@ const Navigation: React.FC = () => {
     }
   };
 
-  // Don't show navigation on login and register pages
   if (location.pathname === "/login" || location.pathname === "/register") {
     return null;
   }

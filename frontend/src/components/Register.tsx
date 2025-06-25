@@ -49,28 +49,23 @@ const Register: React.FC = () => {
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
 
-    // Username validation
     if (username.length < 3) {
       newErrors.username = "O nome de usuário deve ter pelo menos 3 caracteres";
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       newErrors.email = "Email inválido";
     }
 
-    // Password validation
     if (password.length < 6) {
       newErrors.password = "A senha deve ter pelo menos 6 caracteres";
     }
 
-    // Confirm password validation
     if (password !== confirmPassword) {
       newErrors.confirmPassword = "As senhas não coincidem";
     }
 
-    // CPF validation (basic format check)
     const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$|^\d{11}$/;
     if (!cpfRegex.test(cpf)) {
       newErrors.cpf = "CPF inválido (formato: 123.456.789-00 ou 12345678900)";
@@ -99,7 +94,6 @@ const Register: React.FC = () => {
   };
 
   const formatCPF = (value: string) => {
-    // Remove all non-digits
     const digits = value.replace(/\D/g, "");
 
     if (digits.length <= 3) {

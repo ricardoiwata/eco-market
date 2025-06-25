@@ -2,7 +2,6 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Login from "../../components/Login";
 
-// Mock do hook de autenticação
 jest.mock("../../hooks/useAuth", () => ({
   useAuthHooks: () => ({
     loading: false,
@@ -35,12 +34,10 @@ describe("Login Component", () => {
     const toggleButton = screen.getByLabelText(/toggle password visibility/i);
     const passwordField = screen.getByLabelText(/senha/i);
 
-    // Inicialmente deve estar tipo "password"
     expect(passwordField).toHaveAttribute("type", "password");
 
     await userEvent.click(toggleButton);
 
-    // Depois do clique, o tipo muda para "text"
     expect(passwordField).toHaveAttribute("type", "text");
   });
 

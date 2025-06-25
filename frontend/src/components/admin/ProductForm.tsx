@@ -91,8 +91,8 @@ const ProductForm: React.FC<ProductFormProps> = ({
   function maskPhone(phone: string) {
     if (!phone) return "";
     return phone.length === 11
-      ? phone.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3") // (XX) 9XXXX-XXXX
-      : phone.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3"); // (XX) XXXX-XXXX
+      ? phone.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3")
+      : phone.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
   }
 
   const validateForm = () => {
@@ -430,9 +430,9 @@ const ProductForm: React.FC<ProductFormProps> = ({
                   backgroundColor: "rgba(255, 255, 255, 0.04)",
                   width: "200px",
                   "&:hover": {
-                    color: "#ffffff", // Cor do texto ao passar o mouse
-                    borderColor: "#1b5e20", // Você também pode ajustar a borda no hover, se necessário
-                  }, // Aumenta a largura
+                    color: "#ffffff",
+                    borderColor: "#1b5e20",
+                  },
                 }}
               >
                 Cancelar
@@ -442,7 +442,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
                 variant="contained"
                 disabled={isSubmitting}
                 sx={{
-                  width: "200px", // Aumenta a largura
+                  width: "200px",
                 }}
                 data-testid="submit-button"
               >

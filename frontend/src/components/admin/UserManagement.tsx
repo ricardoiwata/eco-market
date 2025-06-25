@@ -198,7 +198,7 @@ const UserManagement: React.FC = () => {
                             onChange={(e) =>
                               handleRoleChange(user._id, e.target.value)
                             }
-                            onBlur={() => setEditRoleId(null)} // cancela edição se perder foco
+                            onBlur={() => setEditRoleId(null)}
                             size="small"
                             sx={{ minWidth: 120 }}
                             autoFocus
@@ -267,7 +267,7 @@ const UserManagement: React.FC = () => {
                           onClick={() => handleDeleteClick(user._id)}
                           sx={{ color: "#f44336" }}
                           disabled={user.role === "admin" || loading}
-                          data-testid={`delete-button-${user.username}`} // 👈 ou user._id, se preferir
+                          data-testid={`delete-button-${user.username}`}
                         >
                           <Delete fontSize="small" />
                         </IconButton>
@@ -281,7 +281,6 @@ const UserManagement: React.FC = () => {
         )}
       </Container>
 
-      {/* Delete Confirmation Dialog */}
       <Dialog open={deleteDialogOpen} onClose={handleDeleteCancel}>
         <DialogTitle>Confirmar exclusão</DialogTitle>
         <DialogContent>
@@ -300,9 +299,9 @@ const UserManagement: React.FC = () => {
               backgroundColor: "rgba(255, 255, 255, 0.04)",
               width: "100px",
               "&:hover": {
-                color: "#ffffff", // Cor do texto ao passar o mouse
-                borderColor: "#1b5e20", // Você também pode ajustar a borda no hover, se necessário
-              }, // Aumenta a largura
+                color: "#ffffff",
+                borderColor: "#1b5e20",
+              },
             }}
           >
             Cancelar

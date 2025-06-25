@@ -3,7 +3,6 @@ import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
 import ProductForm from "../../components/admin/ProductForm";
 
-// Mock do navigate do react-router-dom
 const mockedNavigate = jest.fn();
 jest.mock("react-router-dom", () => {
   const originalModule = jest.requireActual("react-router-dom");
@@ -13,7 +12,6 @@ jest.mock("react-router-dom", () => {
   };
 });
 
-// Mock da API
 jest.mock("../../services/api", () => ({
   __esModule: true,
   default: {
@@ -47,7 +45,6 @@ describe("ProductForm", () => {
     await userEvent.type(nomeInput, "Sabonete Natural");
     await userEvent.type(descricaoInput, "Sabonete vegano e artesanal");
 
-    // Removido clear(), só digitar direto
     await userEvent.type(precoInput, "25,50");
 
     await userEvent.click(estadoSelect);

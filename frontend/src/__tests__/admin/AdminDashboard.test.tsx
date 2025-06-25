@@ -3,7 +3,6 @@ import { MemoryRouter } from "react-router-dom";
 import AdminDashboard from "../../components/admin/AdminDashboard";
 import api from "../../services/api";
 
-// Mock do módulo api
 jest.mock("../../services/api");
 
 const mockedApi = api as jest.Mocked<typeof api>;
@@ -12,10 +11,10 @@ describe("AdminDashboard component", () => {
   it("deve exibir estatísticas corretamente após carregar", async () => {
     mockedApi.get.mockImplementation((url) => {
       if (url === "/products") {
-        return Promise.resolve({ data: [{}, {}, {}] }); // 3 produtos
+        return Promise.resolve({ data: [{}, {}, {}] });
       }
       if (url === "/users") {
-        return Promise.resolve({ data: [{}, {}] }); // 2 usuários
+        return Promise.resolve({ data: [{}, {}] });
       }
       return Promise.reject(new Error("Unknown endpoint"));
     });
@@ -26,15 +25,13 @@ describe("AdminDashboard component", () => {
       </MemoryRouter>
     );
 
-    // Spinner enquanto carrega
     expect(screen.getByRole("progressbar")).toBeInTheDocument();
 
-    // Espera os números aparecerem
     await waitFor(() => {
-      expect(screen.getByText("3")).toBeInTheDocument(); // totalProducts
+      expect(screen.getByText("3")).toBeInTheDocument();
     });
     await waitFor(() => {
-      expect(screen.getByText("2")).toBeInTheDocument(); // totalUsers
+      expect(screen.getByText("2")).toBeInTheDocument();
     });
 
     expect(screen.getByText("Produtos")).toBeInTheDocument();
@@ -69,7 +66,6 @@ describe("AdminDashboard component", () => {
       expect(screen.queryByRole("progressbar")).not.toBeInTheDocument();
     });
 
-    // Como os dados falharam, estatísticas continuam 0
     const allZeroElements = screen.getAllByText("0");
     expect(allZeroElements.length).toBeGreaterThan(0);
   });

@@ -2,7 +2,6 @@ import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import AdminProductList from "../../components/admin/AdminProductList";
 
-// Mocks
 const mockNavigate = jest.fn();
 const mockDeleteProduct = jest.fn();
 const mockFetchProducts = jest.fn();

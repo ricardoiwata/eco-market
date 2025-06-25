@@ -2,7 +2,6 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import UserList from "../../components/UserList";
 import api from "../../services/api";
 
-// Mock da API
 jest.mock("../../services/api");
 
 const mockUsers = [
@@ -30,20 +29,17 @@ describe("UserList component", () => {
 
   it("deve excluir usuário ao clicar no botão 'Deletar'", async () => {
     (api.get as jest.Mock).mockResolvedValue({ data: mockUsers });
-    (api.delete as jest.Mock).mockResolvedValue({}); // Mock da deleção
+    (api.delete as jest.Mock).mockResolvedValue({});
 
     render(<UserList />);
 
-    // Espera carregar os usuários
     await waitFor(() => {
       expect(screen.getByText("João")).toBeInTheDocument();
     });
 
-    // Clica no botão Deletar do usuário João
     const deleteButton = screen.getAllByRole("button", { name: /deletar/i })[0];
     fireEvent.click(deleteButton);
 
-    // Espera o João ser removido da tela
     await waitFor(() => {
       expect(screen.queryByText("João")).not.toBeInTheDocument();
     });
