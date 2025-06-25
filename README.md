@@ -90,6 +90,21 @@ npm test
 
 > 💡 Os testes do backend usam `mongodb-memory-server`, não precisa ter o banco ativo para os testes!
 
+### 🦾 Testes usando robot
+``` bash
+# Instale o robot e a selenium library (Tenha o python instalado no seu computador)
+pip install robotframework
+pip install robotframework-seleniumlibrary
+
+# Acessar a pasta dos testes
+cd eco-market/robot-tests
+
+# Insira o comando para rodar todos os testes, lembre-se que para testes E2E usando robot 
+# é necessário ter a aplicação rodando no computador!
+
+python -m robot .
+```
+
 ---
 
 ## 🤖 GitHub Actions
