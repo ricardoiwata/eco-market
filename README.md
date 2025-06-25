@@ -99,7 +99,7 @@ pip install robotframework-seleniumlibrary
 # Acessar a pasta dos testes
 cd eco-market/robot-tests
 
-# Rodar o comando para rodar todos os testes, lembre-se que para testes robot 
+# Insira o comando para rodar todos os testes, lembre-se que para testes E2E usando robot 
 # é necessário ter a aplicação rodando no computador!
 
 python -m robot .
